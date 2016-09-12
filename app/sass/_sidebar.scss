@@ -1,0 +1,119 @@
+.sidebar-menu {
+  background: $color__navigation;
+  width: $size__navigation;
+  overflow: hidden;
+  position: static;
+
+  &__content {
+    background: inherit;
+    padding-top: 8px;
+  }
+
+  &__items {
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      height: $size__navigation-item;
+      line-height: $size__navigation-item;
+      font-size: 13px;
+      color: $color__navigation-text;
+      width: 100%;
+      margin: 0;
+      text-align: left;
+      text-transform: none;
+      padding: 0 16px 0 24px;
+      @include transition(all 0.4s ease);
+
+      &--active {
+        background: $color__navigation-bg-hover;
+      }
+
+      &:hover {
+        background: $color__navigation-bg-hover;
+      }
+
+      &--title {
+        height: 32px;
+        line-height: 32px;
+        color: $color__navigation-title;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 0 16px 0 24px;
+        width: auto;
+
+        &:hover {
+          background: transparent;
+        }
+      }
+
+      &__icon {
+        display: inline-block;
+        vertical-align: top;
+        width: 24px;
+        @include transition(margin-right 0.4s ease);
+      }
+
+      &__title {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 80px);
+        margin-right: 0;
+        @include transition(margin-right 0.4s ease);
+      }
+
+      ng-md-icon,
+      svg {
+        height: $size__navigation-item;
+      }
+
+      ng-md-icon {
+        margin-right: 16px;
+      }
+
+      svg {
+        fill: $color__navigation-text;
+      }
+
+      &--open {
+        .sidebar-menu__items__item__icon {
+          margin-right: 6px;
+        }
+
+        .sidebar-menu__items__item__title {
+          margin-right: 8px;
+        }
+      }
+
+      &--home {
+        background: transparent !important;
+        height: 16px;
+        line-height: 16px;
+        cursor: default;
+        min-height: 0;
+        margin-top: 20px;
+
+        .sidebar-menu__items__item__title {
+          color: rgba(255, 255, 255, 0.3);
+          text-transform: uppercase;
+          font-size: 12px;
+          width: auto;
+        }
+
+        .sidebar-menu__items__item__icon,
+        .sidebar-menu__items__item__arrow {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__subitems {
+    display: block;
+    width: 100%;
+
+    .item {
+      padding-left: 58px;
+    }
+  }
+}

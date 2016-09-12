@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base href="../">
+    <title>JSDoc: source : CodePressGenerator.js</title>
+    <link href="css/prettify-tomorrow.css" type="text/css" rel="stylesheet">
+    <link href="css/site.css" type="text/css" rel="stylesheet">
+  </head>
+  <body ng-app="">
+    <nav id="toc">
+      <input placeholder="Filter" id="filter-input" class="col12 block field" type="text">
+      <div class="nav-wrapper">
+      <h2><a href="index.html">Index</a></h2>
+      <ul class="module">
+        <!-- app -->
+        <h2 class="module">
+          <a chref="" ng-click="moduleapp = !moduleapp">
+            module: app
+          </a>
+          <i ng-cloak="" ng-show="moduleapp">+</i>
+        </h2>
+        <li id="app" ng-hide="moduleapp">
+          <ul class="group">
+            <h2>
+              <a href="" ng-click="appoverview = !appoverview">
+                overview
+              </a>
+              <i ng-cloak="" ng-show="appoverview">+</i>
+            </h2>
+            <ul ng-hide="appoverview">
+              <li>
+                <a href="app.codepress_App.html">codepress:App</a>
+              </li>
+            </ul>
+          </ul><ul class="group">
+            <h2>
+              <a href="" ng-click="appdirective = !appdirective">
+                directive
+              </a>
+              <i ng-cloak="" ng-show="appdirective">+</i>
+            </h2>
+            <ul ng-hide="appdirective">
+              <li>
+                <a href="app_dynamic.html">dynamic</a>
+              </li><li>
+                <a href="app_sanitizeTitle.html">sanitizeTitle</a>
+              </li>
+            </ul>
+          </ul><ul class="group">
+            <h2>
+              <a href="" ng-click="appfilter = !appfilter">
+                filter
+              </a>
+              <i ng-cloak="" ng-show="appfilter">+</i>
+            </h2>
+            <ul ng-hide="appfilter">
+              <li>
+                <a href="app_escape.html">escape</a>
+              </li><li>
+                <a href="app_nodash.html">nodash</a>
+              </li>
+            </ul>
+          </ul><ul class="group">
+            <h2>
+              <a href="" ng-click="appprovider = !appprovider">
+                provider
+              </a>
+              <i ng-cloak="" ng-show="appprovider">+</i>
+            </h2>
+            <ul ng-hide="appprovider">
+              <li>
+                <a href="app_ngMdIconServiceProvider.html">ngMdIconServiceProvider</a>
+              </li>
+            </ul>
+          </ul><ul class="group">
+            <h2>
+              <a href="" ng-click="appanimation = !appanimation">
+                animation
+              </a>
+              <i ng-cloak="" ng-show="appanimation">+</i>
+            </h2>
+            <ul ng-hide="appanimation">
+              <li>
+                <a href="app_slideToggle.html">slideToggle</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul><ul class="module">
+        <!-- codepress -->
+        <h2 class="module">
+          <a chref="" ng-click="modulecodepress = !modulecodepress">
+            module: codepress
+          </a>
+          <i ng-cloak="" ng-show="modulecodepress">+</i>
+        </h2>
+        <li id="codepress" ng-hide="modulecodepress">
+          <ul class="group">
+            <h2>
+              <a href="" ng-click="codepresscontroller = !codepresscontroller">
+                controller
+              </a>
+              <i ng-cloak="" ng-show="codepresscontroller">+</i>
+            </h2>
+            <ul ng-hide="codepresscontroller">
+              <li>
+                <a href="codepress.codepressio_CodePress.html">codepressio:CodePress</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul><ul class="module">
+        <!-- codepressgenerator -->
+        <h2 class="module">
+          <a chref="" ng-click="modulecodepressgenerator = !modulecodepressgenerator">
+            module: codepressgenerator
+          </a>
+          <i ng-cloak="" ng-show="modulecodepressgenerator">+</i>
+        </h2>
+        <li id="codepressgenerator" ng-hide="modulecodepressgenerator">
+          <ul class="group">
+            <h2>
+              <a href="" ng-click="codepressgeneratorcontroller = !codepressgeneratorcontroller">
+                controller
+              </a>
+              <i ng-cloak="" ng-show="codepressgeneratorcontroller">+</i>
+            </h2>
+            <ul ng-hide="codepressgeneratorcontroller">
+              <li>
+                <a href="codepressgenerator.codepressio_CodePressGeneratorController.html">codepressio:CodePressGeneratorController</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul><ul class="module">
+        <!-- codepressgenerators -->
+        <h2 class="module">
+          <a chref="" ng-click="modulecodepressgenerators = !modulecodepressgenerators">
+            module: codepressgenerators
+          </a>
+          <i ng-cloak="" ng-show="modulecodepressgenerators">+</i>
+        </h2>
+        <li id="codepressgenerators" ng-hide="modulecodepressgenerators">
+          <ul class="group">
+            <h2>
+              <a href="" ng-click="codepressgeneratorscontroller = !codepressgeneratorscontroller">
+                controller
+              </a>
+              <i ng-cloak="" ng-show="codepressgeneratorscontroller">+</i>
+            </h2>
+            <ul ng-hide="codepressgeneratorscontroller">
+              <li>
+                <a href="codepressgenerators.codepress_CodePressGenerators.html">codepress:CodePressGenerators</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul><ul class="module">
+        <!-- codepressui -->
+        <h2 class="module">
+          <a chref="" ng-click="modulecodepressui = !modulecodepressui">
+            module: codepressui
+          </a>
+          <i ng-cloak="" ng-show="modulecodepressui">+</i>
+        </h2>
+        <li id="codepressui" ng-hide="modulecodepressui">
+          <ul class="group">
+            <h2>
+              <a href="" ng-click="codepressuicontroller = !codepressuicontroller">
+                controller
+              </a>
+              <i ng-cloak="" ng-show="codepressuicontroller">+</i>
+            </h2>
+            <ul ng-hide="codepressuicontroller">
+              <li>
+                <a href="codepressui.codepress_CodePressUI.html">codepress:CodePressUI</a>
+              </li>
+            </ul>
+          </ul><ul class="group">
+            <h2>
+              <a href="" ng-click="codepressuievent = !codepressuievent">
+                event
+              </a>
+              <i ng-cloak="" ng-show="codepressuievent">+</i>
+            </h2>
+            <ul ng-hide="codepressuievent">
+              <li>
+                <a href="codepressui_codepressui-add-css.html">codepressui-add-css</a>
+              </li><li>
+                <a href="codepressui_codepressui-alert.html">codepressui-alert</a>
+              </li><li>
+                <a href="codepressui_codepressui-breadcrumb-add.html">codepressui-breadcrumb-add</a>
+              </li><li>
+                <a href="codepressui_codepressui-breadcrumb-set.html">codepressui-breadcrumb-set</a>
+              </li><li>
+                <a href="codepressui_codepressui-dialog.html">codepressui-dialog</a>
+              </li><li>
+                <a href="codepressui_codepressui-generator-info.html">codepressui-generator-info</a>
+              </li><li>
+                <a href="codepressui_codepressui-load-css.html">codepressui-load-css</a>
+              </li><li>
+                <a href="codepressui_codepressui-loading.html">codepressui-loading</a>
+              </li><li>
+                <a href="codepressui_codepressui-page-title.html">codepressui-page-title</a>
+              </li><li>
+                <a href="codepressui_codepressui-set-view-class.html">codepressui-set-view-class</a>
+              </li><li>
+                <a href="codepressui_codepressui-show-toast.html">codepressui-show-toast</a>
+              </li><li>
+                <a href="codepressui_codepressui-sidebar-url.html">codepressui-sidebar-url</a>
+              </li><li>
+                <a href="codepressui_codepressui-template-category.html">codepressui-template-category</a>
+              </li>
+            </ul>
+          </ul><ul class="group">
+            <h2>
+              <a href="" ng-click="codepressuifunction = !codepressuifunction">
+                function
+              </a>
+              <i ng-cloak="" ng-show="codepressuifunction">+</i>
+            </h2>
+            <ul ng-hide="codepressuifunction">
+              <li>
+                <a href="codepressui_codepressui-alert.html">codepressui-alert</a>
+              </li><li>
+                <a href="codepressui_sendCodeTo.html">sendCodeTo</a>
+              </li><li>
+                <a href="codepressui_showCopyDone.html">showCopyDone</a>
+              </li><li>
+                <a href="codepressui_showHelp.html">showHelp</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul><ul class="module">
+        <!-- cp_ervices -->
+        <h2 class="module">
+          <a chref="" ng-click="modulecp_ervices = !modulecp_ervices">
+            module: cpServices
+          </a>
+          <i ng-cloak="" ng-show="modulecp_ervices">+</i>
+        </h2>
+        <li id="cpServices" ng-hide="modulecp_ervices">
+          <ul class="group">
+            <h2>
+              <a href="" ng-click="cp_ervicesoverview = !cp_ervicesoverview">
+                overview
+              </a>
+              <i ng-cloak="" ng-show="cp_ervicesoverview">+</i>
+            </h2>
+            <ul ng-hide="cp_ervicesoverview">
+              <li>
+                <a href="cpServices.codepress_cpServices.html">codepress:cpServices</a>
+              </li>
+            </ul>
+          </ul><ul class="group">
+            <h2>
+              <a href="" ng-click="cp_ervicesservice = !cp_ervicesservice">
+                service
+              </a>
+              <i ng-cloak="" ng-show="cp_ervicesservice">+</i>
+            </h2>
+            <ul ng-hide="cp_ervicesservice">
+              <li>
+                <a href="cpServices_getAll.html">getAll</a>
+              </li><li>
+                <a href="cpServices_getTemplate.html">getTemplate</a>
+              </li><li>
+                <a href="cpServices_getTemplates.html">getTemplates</a>
+              </li><li>
+                <a href="cpServices_getUserInfo.html">getUserInfo</a>
+              </li><li>
+                <a href="cpServices_sendCodeTo.html">sendCodeTo</a>
+              </li><li>
+                <a href="cpServices_updateCounter.html">updateCounter</a>
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </nav>
+    <div id="content" class="page-wrap">
+      <h1 class="title">
+        source : CodePressGenerator.js
+      </h1>
+      <div id="main" class="big-container">
+        <!-- source code html -->
+        <article>
+          <pre class="prettyprint source linenums"><code>/**
+ * @ngdoc controller
+ * @name codepressgenerator.codepressio:CodePressGeneratorController
+ *
+ * @description
+ * This controller take care of rendering the addon views, and also load the
+ * its stylesheets and bundle.min.js file.
+ * &lt;br>&lt;br>
+ * Once the data has been retrieved the controller update the UI first, and
+ * after communicate, trought signals, to the loaded addon, in order to allow
+ * the latter to run his own customisation.
+ * &lt;br>&lt;br>
+ * The addon info are stored in the codepress global variable.&lt;br>
+ * &lt;br>
+ * **ROUTE**: _/generators/:generator_ &lt;br>
+ * This route load the following addon files:
+ *  - [addon]/assets/views/[generator].html
+ *  - [addon]/assets/js/bundle.min.js - This file is the minifycation of controller.js and route.js.
+ *  - [addon]/assets/css/style.css - The extra css needed by the addon.
+ *
+ * Once the data is retrieved by the service, this controller will emit the following event:&lt;br>
+ * _$scope.$broadcast(templates.generator.slug + '-templates', templates);_&lt;br>
+ * **templates** contains all the data retrieved from the service, for further information
+ * please refer to the endpoint GET generator/:generator {@link http://codepress.io/#/codepress/get-generators-generator}
+ * of the REST API documentation.
+ * &lt;br>&lt;br>
+ * _Also further information are available in the README file of codepress-addon boilerplate._
+ */
+/* eslint func-names: ["error", "never"] */
+const CodePressGenerator = function ($scope, $routeParams, $log, cpServices, codePressApp) {
+  let oldGenerator;
+  let oldTemplateSlug;
+  let templateView;
+  const generatorSlug = $routeParams.generator;
+  const templateSlug = $routeParams.slug;
+  /**
+   * /generators/:generator
+   */
+  function loadTemplates() {
+    cpServices.getTemplates(generatorSlug)
+      .success((templates) => {
+        // The breacrumbs
+        $scope.$emit('codepressui-breadcrumb-set', [
+          { title: 'Generators', url: 'generators' },
+          { title: templates.generator.title, url: `generators/${templates.generator.slug}` },
+        ]);
+        $scope.templates = templates;
+        // Set the info about the current generator
+        const generatorData = {
+          title: templates.generator.title,
+          slug: templates.generator.slug,
+        };
+        $scope.$emit('codepressui-generator-info', generatorData);
+        $scope.$emit('codepressui-page-title', templates.generator.title);
+        // Inform the addon that the templates have been retrieved, so it can do wherever he needes
+        const signal = `${templates.generator.slug}-templates`;
+        $scope.$broadcast(signal, templates);
+        $scope.$emit('codepressui-template-category', '');
+        // Loading complete
+        $scope.$emit('codepressui-loading', false);
+      })
+      .error((data, status, header, config) => {
+        $log.log(data, status, header, config);
+      });
+  }
+  /**
+   * generators/:generator/:slug
+   *
+   */
+  function loadTemplate() {
+    cpServices.getTemplate(generatorSlug, templateSlug)
+      .success((fields) => {
+        $scope.formFields = {};
+        $scope.fields = fields;
+        $scope.codePressApp.template = {};
+        // Inform the addon that the templates have been retrieved, so it can do wherever he needes
+        const signal = `${fields.generator.slug}-template-loaded`;
+        $scope.$broadcast(signal, fields);
+        /*
+         * Set the currentTab to 0, as can't update its value if I use
+         *  ng-init="currentTab = 0".
+         */
+        $scope.currentTab = 0;
+        // Load the code and preview template
+        $scope.codePressApp.template.title = fields.title;
+        $scope.codePressApp.template.slug = fields.template.slug;
+        $scope.codePressApp.template.category = fields.category;
+        $scope.codePressApp.template.codeTemplate = fields.code;
+        // The following 2 variable are used to update the counter
+        $scope.codePressApp.template.ID = fields.template.ID;
+        /* Update the breadcrumbs */
+        $scope.$emit('codepressui-breadcrumb-set', [
+          { title: 'Generators', url: 'generators' },
+          { title: fields.generator.title, url: `generators/${fields.generator.slug}` },
+          {
+            title: fields.template.title,
+            url: `generators/${fields.generator.slug}/${fields.template.slug}`,
+          },
+        ]);
+        /* Set the sidebar layout */
+        $scope.$emit('codepressui-sidebar-url', '');
+        // Need to inform the UI the slug of the template category,
+        // as I want to "auto open" the left sidebar category.
+        $scope.$emit('codepressui-template-category', fields.category);
+        /**
+         * The PATH = cpServiceslug + itemSlug.
+         * The key is just for utility purpose, as in the left sidebar need to
+         * set the item, relative to the current template, as active.
+         */
+        const generator = {
+          title: fields.generator.title,
+          pageTitle: `${fields.generator.title} - ${fields.title}`,
+          slug: fields.generator.slug,
+          path: `${fields.generator.slug}/${fields.template.slug}`,
+          template: `${fields.generator.slug}/${fields.template.slug}`,
+        };
+        $scope.$emit('codepressui-generator-info', generator);
+        const className = `${fields.generator.slug}-template-${fields.template.slug}`;
+        $scope.$emit('codepressui-set-view-class', className);
+        $scope.$emit('codepressui-loading', false);
+      })
+      .error((data, status, header, config) => {
+        $log.log(data, status, header, config);
+      });
+  }
+  // Initialize the controller
+  $scope.codePressApp = codePressApp;
+  $scope.$emit('codepressui-loading', true);
+  /* Remove the sidebar layout */
+  $scope.$emit('codepressui-sidebar-url', '');
+  // Addon main template
+  $scope.codePressGeneratorTemplate = () => {
+    if (generatorSlug === oldGenerator && templateSlug === oldTemplateSlug) {
+      return templateView;
+    }
+    // Load the css required by the generator
+    const addon = codepress.addon[generatorSlug];
+    $scope.$emit('codepressui-load-css', `${addon}assets/css/style.css`);
+    // Load the addon bundle.js file
+    $scope.$emit('codepressui-load-js', `${addon}assets/js/bundle.min.js`);
+    // Set the name of the loaded view
+    $scope.$emit('codepressui-set-view-class', `${generatorSlug}-view-all-items`);
+    oldGenerator = generatorSlug;
+    oldTemplateSlug = templateSlug;
+    templateView = (templateSlug) ? `${addon}assets/views/template.html` :
+      `${addon}assets/views/${generatorSlug}.html`;
+    return templateView;
+  };
+  if (templateSlug) {
+    loadTemplate(generatorSlug, templateSlug);
+  } else {
+    loadTemplates(generatorSlug);
+  }
+};
+CodePressGenerator.$inject = ['$scope', '$routeParams', '$log', 'cpServices', 'codePressApp'];
+angular.module('codepress').controller('CodePressGenerator', CodePressGenerator);
+</code></pre>
+        </article>
+        <!-- index.html -->
+        <!-- class files -->
+      </div>
+      <footer style="clear:both">
+        Documentation generated by
+        <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a>
+        using
+        <a href="https://github.com/allenhwkim/angular-jsdoc">Angular-JSDoc template</a>
+      </footer>
+    </div>
+    <script src="js/prettify.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/site.js"></script>
+    <!--%= prettyJson %-->
+    <script>
+      prettyPrint();
+      var lineNo = window.location.hash.match(/#line([0-9]+)$/);
+      lineNo && document.querySelector("ol li:nth-child("+(lineNo[1])+")").scrollIntoView();
+    </script>
+  </body>
+</html>

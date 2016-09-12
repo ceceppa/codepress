@@ -1,0 +1,47 @@
+/********************************
+ * COLORS
+ */
+$color__white: #fff;
+
+$color__logo-bg: rgba(255,255,255,0.1);
+
+//Toolbar
+$color__toolbar-svg-fill: #8e8e8e;
+$color__button-border: #E1E1E1;
+
+//Left sidebar navigation items
+$color__navigation: #2D323E;
+$color__navigation-bg-hover: rgba(0,0,0,0.1);
+$color__navigation-title: rgba(255,255,255,0.3);
+$color__navigation-text: rgba(255,255,255,0.7);
+
+//Main content
+$color__bg: #F5F5F5;
+$color__section-title: rgba(#8e8e8e, 0.8);
+$color__content-title: rgba(0, 0, 0, 0.9);
+$color__content-text: #8e8e8e;
+
+//Footer
+$color__footer-svg-fill: #666;
+
+
+/********************************
+ * SIZES
+ */
+$size__toolbar: 64px;
+$size__footer: 30px;
+
+//Left sidebar
+$size__navigation: 240px;
+$size__navigation-item: 48px;
+
+//padding
+$padding__navigation: 0 8px 0 16px;
+
+//Pages
+$size__page-header: 160px;
+
+/********************************
+ * FONTS
+ */
+$font__toolbar: 16px;

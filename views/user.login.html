@@ -1,0 +1,28 @@
+<div id="login" class="table">
+  <div class="table-row">
+    <div class="table-cell">
+      <div class="form login-form" ng-controller="UserController">
+        <div class="error" ng-show="showErrorMessage">
+          {{ 'Invalid email or password' }}
+        </div>
+        <form name="loginForm" method="POST" ng-submit="authenticate()">
+          <div>
+            <label for="email" class="fa fa-envelope"></label>
+            <input type="text" name="email" id="email" ng-model="formFields.email" placeholder="{{ 'email' }}" ng-required="true">
+          </div>
+
+          <div>
+            <label for="password" class="fa fa-key"></label>
+            <input type="password" name="password" id="password" ng-model="formFields.password" placeholder="{{ 'password' }}" ng-required="true">
+            <button class="fa fa-chevron-right" type="submit" ng-disabled="! loginForm.$valid" ng-hide="loginForm.$submitted"></button>
+            <div class="loading" ng-show="loginForm.$submitted"><span class="fa fa-refresh"></span></div>
+          </div>
+        </form>
+      </div>
+      <div class="actions">
+        <span class="title">Login</span>
+        <a href="#/user/forgot" class="forgot">forgot?</a>
+      </div>
+    </div>
+  </div>
+</div>

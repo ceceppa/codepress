@@ -1,0 +1,234 @@
+html,
+body {
+  &.is-embedded {
+    overflow: hidden;
+  }
+}
+
+body {
+  font-size: 1.3rem;
+
+  &.firefox {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  @include transition(all 0.4s ease);
+}
+
+.is-view {
+  opacity: 0;
+  @include transition(all 0.6s 0.2s ease);
+
+  &.loaded {
+    opacity: 1;
+  }
+}
+
+.slide-toggle {
+  overflow: hidden;
+  @include transition(all 0.4s ease);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/**
+ * Side bar HELP
+ *
+ */
+#help {
+  .content {
+    position: relative;
+
+    .help {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      opacity: 0;
+      @include transition(all 0.4s ease);
+
+      &.active {
+        opacity: 1;;
+      }
+
+      div {
+        font-size: 18px;
+        color: $color__footer-svg-fill;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 14px;
+        color: $color__footer-svg-fill;
+      }
+    }
+  }
+}
+
+.layout-flex {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.full-width {
+  width: 95%;
+}
+
+/**
+ * input placeholder disappeared :O.
+ */
+md-input-container input {
+  @include input-placeholder-color(rgba(0,0,0,0.5));
+}
+
+/** Page header */
+#main-content md-toolbar {
+  &.fixed{
+    position: fixed;
+
+    + * {
+      margin-top: 64px;
+    }
+  }
+
+  md-input-container {
+    margin: 0;
+
+    label {
+      display: none !important;
+    }
+
+    input {
+      color: rgba($color__white, 0.9) !important;
+
+      @include placeholder {
+        color: rgba($color__white, 0.7);
+      };
+    }
+  }
+
+  .md-button {
+    min-width: 0;
+    margin-right: 0 !important;
+  }
+
+  svg{
+    position: relative;
+    top: 8px;
+    fill: rgba(255,255,255,1);
+  }
+}
+
+/**
+ * Create the colors as css classes, no theme can use them.
+ * Changing theme colors will affect them as well, and so we
+ * don't have to recompile all the addon css
+ */
+.color-svg {
+  svg {
+    fill: $color__toolbar-svg-fill
+  }
+}
+
+.bg-main-content {
+  background: $color__bg;
+}
+
+.bg__padding {
+  &--top {
+    padding-top: 16px;
+  }
+
+  &--left {
+    padding-left: 16px;
+  }
+
+  &--bottom {
+    padding-bottom: 16px;
+  }
+}
+
+/**
+ Theme element colors
+*/
+.color-navigation-text {
+  color: $color__navigation-text;
+}
+
+.color-section-title {
+  color: $color__section-title;
+}
+
+.color-content-title {
+  color: $color__content-title;
+}
+
+.color-content-text {
+  color: $color__content-title;
+}
+
+.cp-loading {
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  z-index: 99;
+  width: 100%;
+
+  &.ng-hide {
+    opacity: 0;
+    @include transition(opacity 0.8s ease);
+  }
+
+  &.ng-hide-remove {
+    opacity: 1;
+  }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.1);
+    border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: $color__logo-bg;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: $color__logo-bg;
+}
+
+.dialog-close {
+  fill: $color__white;
+}
+.dialog-dl {
+  border-top: 1px solid $color__navigation-bg-hover;
+  padding-top: 20px;
+  margin-top: 50px;
+
+  dt,dd {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  dt {
+    width: 40%;
+    font-weight: bold;
+  }
+  dd {
+    margin-left: 0;
+    width: 58%;
+  }
+}

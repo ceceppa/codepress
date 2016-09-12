@@ -1,0 +1,56 @@
+.cp-header {
+  background: url('img/header-bg.png') no-repeat;
+  background-size: cover;
+  height: 160px;
+  min-height: 160px;
+  max-height: 160px;
+  padding: 24px 0 0 0;
+
+  &__title {
+    font-size: 30px !important;
+    line-height: 40px;
+    font-weight: lighter !important;
+  }
+
+  &__subtitle{
+    font-size: 16px !important;
+    font-weight: lighter !important;
+    margin-top: 20px !important;
+  }
+}
+
+.cp-home {
+  &__buttons {
+    &__button {
+      padding: 0;
+      margin: 5% 1%;
+
+      &__icon {
+        display: block;
+        padding: 30px;
+      }
+
+      &__title {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+
+//API Style
+.api {
+  &-rest,
+  &-output {
+    background: $color__white;
+    display: block;
+    padding: 10px;
+  }
+
+  &-outout {
+
+  }
+}

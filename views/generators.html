@@ -1,0 +1,11 @@
+<div layout="row" class="gen-list is-view" ng-class="{loaded:true}">
+  <div ng-repeat="generator in cpGenerators"  layout="column" class="gen-list__link md-whiteframe-1dp">
+    <md-button href="#/generators/{{ generator.slug }}" alt="{{ generator.name }}" class="gen-list__image" style="background-image: url({{generator.thumbnail}})"></md-button>
+    <span class="gen-list__title">
+      <a href="#/generators/{{ generator.slug }}" alt="{{ generator.name }}" class="gen-list__title__link">{{generator.title}}</a>
+      <md-button class="md-fab md-mini md-primary gen-list__title__info" aria-label="{{generator.name}}" ng-click="showGeneratorInfo($event, generator)">
+        <ng-md-icon icon="info_outline" class="gen-list__title__info__icon"></ng-md-icon>
+      </md-button>
+    </span>
+  </div>
+</div>

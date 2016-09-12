@@ -1,0 +1,52 @@
+//Main ng-view
+.home-about {
+  align-items: center;
+  justify-content: center;
+}
+
+.cp-about {
+  font-family: 'Raleway', sans-serif;
+  padding: 0 20px;
+
+  &__title {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  &__subtitle {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 150px;
+    line-height: 1.2;
+    // font-style: italic;
+  }
+
+  &__buttons {
+    margin-bottom: 20px;
+  }
+
+  &__coded {
+    text-align: center;
+    padding-top: 0;
+
+    ng-md-icon {
+      display: inline-block;
+      vertical-align: middle;
+    };
+  }
+
+  &__buttons {
+    &__button {
+      padding: 30px;
+
+      &__icon {
+        display: block;
+      }
+    }
+  }
+}

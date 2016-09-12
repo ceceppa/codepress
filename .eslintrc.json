@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "semi": 2,
+    "no-param-reassign": 0
+  },
+  "env": {
+    "browser": 1,
+    "es6": 1
+  },
+  "globals": {
+    "angular": 1
+  },
+  "extends": [
+    "eslint-config-airbnb"
+  ],
+  "globals": {
+    "codepress": true,
+    "angular": true,
+    "Prism": true
+  }
+}

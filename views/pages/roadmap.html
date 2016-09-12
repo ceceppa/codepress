@@ -1,0 +1,11 @@
+<div layout="row" class="roadmap md-padding" layout-align="space-between" layout-wrap>
+  <div class="roadmap__card md-whiteframe-1dp" flex="30" ng-repeat="item in roadmapData">
+    <md-toolbar md-scroll-shrink>
+       <div class="md-toolbar-tools">{{item.name}}</div>
+    </md-toolbar>
+    <md-list-item ng-repeat="field in item.items.cards" class="roadmap__card__item" >
+     <p class="md-body-1 roadmap__card__item__label"> {{ field.name }} </p>
+     <ng-md-icon icon="{{field.labels[0].name || 'remove'}}"></ng-md-icon>
+    </md-list-item>
+  </div>
+</div>

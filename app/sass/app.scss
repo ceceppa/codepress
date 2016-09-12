@@ -1,0 +1,30 @@
+@import "bourbon/bourbon";
+@import "mixin";
+@import "variables";
+@import "../../node_modules/angular-material/angular-material.scss";
+@import "../../node_modules/angular-material/layouts/angular-material.layouts.scss";
+@import "../../node_modules/angular-material/layouts/angular-material.layout-attributes.scss";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+  opacity: 0;
+}
+
+@import "splash";
+
+@import "perfect-scrollbar";
+
+//common elements style
+@import "elements";
+
+/** Main Layout style: toolbar, sidebar, etc */
+@import "toolbar";
+@import "content";
+@import "sidebar";
+@import "footer";
+
+/** Theme componments styles */
+@import "pages/pages";
+
+//Prism
+@import "prism-coy";

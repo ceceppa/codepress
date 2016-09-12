@@ -1,0 +1,72 @@
+.doc-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 864px;
+  opacity: 0;
+  padding: 20px;
+  // line-height: 1.6;
+  line-height: 2;
+  font-weight: lighter;
+  @include transition(all 0.4s ease);
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  h2, h3, h4, h5 {
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  code {
+    display: block;
+  }
+
+  iframe {
+    border: none;
+    width: calc(100vw - 240px);
+    height: calc(100vh - 64px);
+  }
+}
+
+//Codepress documentation page
+.codepress-documentation {
+  overflow: hidden;
+
+  .codepress-main-content {
+    margin: -20px 0 0 -20px;
+  }
+
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+
+  thead {
+    background: $color__content-text;
+
+    th {
+      background: $color__logo-bg;
+    }
+  }
+
+  th,
+  td {
+    padding: 0 30px;
+  }
+
+  tbody {
+    background: $color__white;
+  }
+}
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/gen-list";
+@import "pages/roadmap";
